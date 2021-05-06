@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5rem;
+  background-color: hsl(0, 0%, 89%);
+  text-align: justify;
+}
+#main-doc {
+  display: flex;
+  margin-left: 3%;
+  overflow-x: initial;
+}
+#container {
+  order: 2;
+  width: 75%;
+  margin-left: 20%;
+}
+.main-section header {
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 10%;
+}
+.main-section p {
+  margin: 20px 0;
+}
+.main-section code {
+  background-color: hsl(0, 0%, 80%);
+  display: flex;
+  height: fit-content;
+  padding: 10px 20px;
+  margin-left: 15px;
+  padding-right: 50%;
+  text-align: left;
+}
+.main-section ul {
+  padding-left: 50px;
+}
+.main-section li {
+  margin-bottom: 10px;
+}
+#nav-bar {
+  width: 20%;
+  margin: 0;
+  border-right: 3px solid gray;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+}
+#nav-bar h2 {
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 22px;
+}
+#nav-bar ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#nav-bar li {
+  border-top: 1px solid black;
+  height: 45px;
+}
+.nav-link {
+  padding-left: 30px;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#References {
+  margin-bottom: 30px;
+}
+#Introduction header {
+  margin-top: 30px;
+}
+@media (max-width: 1000px) {
+  #container {
+    width: 95%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  #nav-bar {
+    display: none;
+  }
+}
